@@ -31,10 +31,10 @@ void print_game(const game_t *game){
 
 pos_t get_move() {
     pos_t out, in;
-    printf("Insert column (1-3):\t");
+    printf("Insert column (1-3): ");
     scanf("%2hhu", &in);
     out = (in - 1) << 4;
-    printf("Insert row (1-3):\t");
+    printf("Insert row (1-3): ");
     scanf("%2hhu", &in);
     out = out | ((in - 1) & 0x0F);
     printf("\n");
